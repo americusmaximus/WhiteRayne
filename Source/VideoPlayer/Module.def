@@ -1,0 +1,4 @@
+LIBRARY
+EXPORTS
+    DLLplayVideo = PlayVideo
+    DLLquitVideo = QuitVideo
