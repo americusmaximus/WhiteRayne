@@ -77,8 +77,7 @@ void Quit(const char* format, ...)
     vsnprintf_s(buffer, MAX_BUFFER_SIZE, format, args);
     va_end(args);
 
-    const auto hwnd = GetLastActivePopup(State.HWND);
-    MessageBoxA(hwnd, buffer, PLAYER_WINDOW_TITLE_NAME, MB_ICONERROR | MB_OK);
+    MessageBoxA(GetLastActivePopup(State.HWND), buffer, PLAYER_WINDOW_TITLE_NAME, MB_ICONERROR | MB_OK);
 }
 
 void StringToWideString(LPWSTR wide, LPCSTR string)
