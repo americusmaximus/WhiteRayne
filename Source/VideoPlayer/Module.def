@@ -1,4 +1,4 @@
 LIBRARY
 EXPORTS
-    DLLplayVideo = PlayVideo
-    DLLquitVideo = QuitVideo
+    DLLplayVideo = PlayVideo        @1
+    DLLquitVideo = QuitVideo        @2
